@@ -1,6 +1,6 @@
 # Initiation à Node.js
 
-## TP 4 : Import / Export de modules
+## TP 5 : Import / Export de modules
 
 ### Ressources
 
@@ -9,9 +9,12 @@ https://nodejs.org/api/modules.html
 ### Objectifs
 
 - créer un répertoire "utils" à la racine du répertoire courant,
-- créer un fichier "say_hello.js" dans le répertoire "utils",
-- dans le fichier say_hello.js, créer une méthode "say_hello" acceptant un paramètre "what",
-- la méthode "say_hello" doit permettre d'afficher dans la console le texte "Hello " + la valeur de la variable "what",
+- créer un fichier "say.js" dans le répertoire "utils",
+- dans le fichier say.js, créer une méthode "hello" acceptant un paramètre "who",
+- la méthode "say" doit permettre d'afficher dans la console le texte "Hello " + la valeur de la variable "who",
+- exporter cette méthode depuis le fichier say.js,
+  -importer la méthode hello du module say.js depuis le fichier app.js,
+- à l'aide de la méthode hello importée, afficher "Hello Node.js" dans le terminal,
 
 ---
 

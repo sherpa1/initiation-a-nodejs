@@ -1,3 +1,4 @@
-const say_hello = require("./utils/say_hello");
+const { hello, bonjour } = require("./utils/say");
 
-say_hello("Node.js");
+hello("world");
+bonjour("tout le monde");
