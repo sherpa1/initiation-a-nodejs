@@ -1,11 +1,41 @@
-const Robot = require("./classes/Robot");
+const print = (something) => {
+    const ms = what_time_is_it();
+    console.log(`${ms}ms : ${something}`);
+}
 
-const hal9000 = new Robot("HAL9000");//Hi, my name is "HAL9000" !
-//const hal9000 = new Robot();//constructor test : You must provide the constructor "ref" param, "undefined" given
-//const hal9000 = new Robot("");//constructor test : You must provide the constructor "" param, "undefined" given
+const what_time_is_it = () => {
+    const now_date = Date.now();
+    return now_date - start_date;//milliseconds after runtime start
+}
 
-console.log(Robot.CONCEPTION_YEAR);//2001
+const now = (order) => {
+    print(`step ${order}`);
+}
 
-const result = hal9000.fibonacci(50);//20365011074
+const after = (order, ms) => {
 
-console.log(result);//20365011074
+    setTimeout(() => {
+        print(`step ${order}`)
+
+    }, ms);
+}
+
+const start_date = Date.now();
+
+
+print("start");
+after(1, 10);
+after(2, 5);
+now(3);
+now(4);
+now(5);
+print("end");
+
+/*
+0ms: start
+5ms: step 2
+5ms: step 3
+5ms: step 4
+5ms: step 5
+15ms: step 1
+*/
