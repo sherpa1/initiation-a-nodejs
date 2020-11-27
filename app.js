@@ -14,18 +14,35 @@ const now = (order) => {
 
 const after = (order, ms) => {
 
-    setTimeout(() => {
-        print(`step ${order}`)
+    return new Promise((resolve, reject) => {
+        try {
+            setTimeout(() => {
+                resolve(order);
+            }, ms);
+        } catch (error) {
+            reject(error);
+        }
+    })
 
-    }, ms);
 }
 
 const start_date = Date.now();
 
 
 print("start");
-after(1, 10);
-after(2, 5);
+
+after(1, 10).then(order => {
+    print(`step ${order}`)
+}).catch(error => {
+    console.error(error);
+})
+
+after(2, 5).then(order => {
+    print(`step ${order}`)
+}).catch(error => {
+    console.error(error);
+})
+
 now(3);
 now(4);
 now(5);
