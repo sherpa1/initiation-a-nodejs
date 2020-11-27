@@ -1,19 +1,17 @@
 # Initiation à Node.js
 
-## TP 2 : Hot Reloading
+## TP 3 : Variables d'environnement
 
 ### Ressources
 
-https://nodemon.io/
+https://nodejs.dev/learn/how-to-read-environment-variables-from-nodejs
 
 ### Objectifs
 
-- importer le module NPM "Nodemon" dans les dépendances de développement,
-- ajouter un script "dev" dans le fichier package.json permettant de démarrer le - - fichier app.js avec nodemon,
-- exécuter le projet avec la commande "npm run dev",
-- afficher dans le terminal "Hello World !",
-- modifier la valeur retournée par l'objet console,
-- vérifier que le texte affiché dans le terminal a été mis jour en cohérence avec la modification,
+- dans le script start du fichier package.json créer une variable d'environnement nommée ENV avec la valeur prod,
+- dans le script dev du fichier package.json créer une variable d'environnement nommée ENV avec la valeur dev,
+- afficher dans le terminal, la valeur de la variable d'environnement ENV depuis le fichier app.js,
+- vérifier que la valeur affichée correspond à la valeur attendue lorsque vous démarrez le projet avec la commande "npm start" et avec la commande "npm run dev",
 
 ---
 
