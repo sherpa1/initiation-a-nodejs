@@ -1,20 +1,19 @@
 # Initiation à Node.js
 
-## TP 1 : Création d'un projet Node.js
+## TP 2 : Hot Reloading
 
 ### Ressources
 
-https://docs.npmjs.com/cli/v6/commands/npm
+https://nodemon.io/
 
 ### Objectifs
 
-- utiliser votre terminal de commandes,
-- créer un dossier helloworld et se placer à sa racine,
-- créer un projet Node.js avec le CLI de NPM,
-- créer un fichier app.js dans le dossier helloworld (avec le terminal ou l'éditeur de code de votre choix),
-- ajouter un script "start" dans le fichier package.json permettant de démarrer le fichier app.js,
-- exécuter le projet avec la commande "npm start",
-- afficher dans le terminal "Hello World !" avec l'objet console de JavaScript,
+- importer le module NPM "Nodemon" dans les dépendances de développement,
+- ajouter un script "dev" dans le fichier package.json permettant de démarrer le - - fichier app.js avec nodemon,
+- exécuter le projet avec la commande "npm run dev",
+- afficher dans le terminal "Hello World !",
+- modifier la valeur retournée par l'objet console,
+- vérifier que le texte affiché dans le terminal a été mis jour en cohérence avec la modification,
 
 ---
 
