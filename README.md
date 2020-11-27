@@ -1,6 +1,6 @@
 # Initiation à Node.js
 
-## TP 5 : Import / Export de modules
+## TP 6 : Classe ES6+
 
 ### Ressources
 
