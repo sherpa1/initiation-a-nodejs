@@ -1,17 +1,17 @@
 # Initiation à Node.js
 
-## TP 3 : Variables d'environnement
+## TP 4 : Import / Export de modules
 
 ### Ressources
 
-https://nodejs.dev/learn/how-to-read-environment-variables-from-nodejs
+https://nodejs.org/api/modules.html
 
 ### Objectifs
 
-- dans le script start du fichier package.json créer une variable d'environnement nommée ENV avec la valeur prod,
-- dans le script dev du fichier package.json créer une variable d'environnement nommée ENV avec la valeur dev,
-- afficher dans le terminal, la valeur de la variable d'environnement ENV depuis le fichier app.js,
-- vérifier que la valeur affichée correspond à la valeur attendue lorsque vous démarrez le projet avec la commande "npm start" et avec la commande "npm run dev",
+- créer un répertoire "utils" à la racine du répertoire courant,
+- créer un fichier "robot.js" dans le répertoire "utils",
+- dans le fichier robot.js, créer une méthode "say_hello" acceptant un paramètre "what",
+- la méthode "say_hello" doit permettre d'afficher dans la console le texte "Hello " + la valeur de la variable "what",
 
 ---
 
