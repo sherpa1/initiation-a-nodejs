@@ -34,10 +34,11 @@ now(5);
 print("end");
 
 /*
-0ms: start
-5ms: step 2
-5ms: step 3
-5ms: step 4
-5ms: step 5
-15ms: step 1
+0ms : start
+6ms : step 3
+6ms : step 4
+6ms : step 5
+6ms : end
+12ms : step 2
+18ms : step 1
 */
