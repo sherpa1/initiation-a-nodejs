@@ -2,22 +2,23 @@
 
 ## Sommaire
 
-- TP1 : Création d'un projet Node.js
-- TP2 : Hot Reloading
-- TP3 : Variables d'environnement
-- TP4 : Import / Export de modules (ES5)
-- TP5 : Imports / Exports multiples + affectation par décomposition
-- TP6 : Programmation Orientée Objet (ES6+)
-- TP7 : Asynchronisme + setTimeout + callbacks
-- TP8 : Asynchronisme + Promise
-- TP9 : Asynchronisme + async / await
+- TP01 : Création d'un projet Node.js
+- TP02 : Hot Reloading
+- TP03 : Variables d'environnement
+- TP04 : Import / Export de modules (ES5)
+- TP05 : Imports / Exports multiples + affectation par décomposition
+- TP06 : Programmation Orientée Objet (ES6+)
+- TP07 : Asynchronisme + setTimeout + callbacks
+- TP08 : Asynchronisme + Promise
+- TP09 : Asynchronisme + async / await
+- TP10 : Consommation d'API
 
-Chaque tp dispose d'une branche git du même nom (ex : TP1 = branche git tp1).
+Chaque tp dispose d'une branche git du même nom (ex : TP01 = branche git tp01).
 
 Pour changer de branche :
 
 ```
-git checkout tp2
+git checkout tp02
 ```
 
 ---
