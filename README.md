@@ -1,6 +1,6 @@
 # Initiation à Node.js
 
-## TP 7 : Asynchronisme et Promises
+## TP 8 : Asynchronisme et Promises
 
 ### Ressources
 
