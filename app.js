@@ -1,36 +1,9 @@
 'use strict';
 
+const { print, time_spent, do_now, do_after } = require("./utils/asynchronous");
+
 //await must be inside async
 (async () => {
-
-    const print = (something, start) => {
-        let ms = time_spent(start);
-        if (ms < 10) ms = `0${ms}`;
-        console.log(`${ms}ms : ${something}`);
-    }
-
-    const time_spent = (start) => {
-        const do_now_date = Date.now();
-        return do_now_date - start;//milliseconds after runtime start
-    }
-
-    const do_now = (step_number, start) => {
-        print(`step ${step_number}`, start);
-    }
-
-    const do_after = (order, ms) => {
-
-        return new Promise((resolve, reject) => {
-            try {
-                setTimeout(() => {
-                    resolve(order);
-                }, ms);
-            } catch (error) {
-                reject(error);
-            }
-        })
-
-    }
 
     const start_date = Date.now();
 
