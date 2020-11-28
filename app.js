@@ -1,3 +1,5 @@
+'use strict';
+
 console.log(process.env.ENV);
 
 if (process.env.ENV === "dev") {
