@@ -1,5 +1,6 @@
 'use strict';
 
+//await must be inside async
 (async () => {
     const print = (something) => {
         const ms = what_time_is_it();
@@ -52,11 +53,12 @@
     print("end");
 
     /*
-    0ms: start
-    5ms: step 2
-    5ms: step 3
-    5ms: step 4
-    5ms: step 5
-    15ms: step 1
+    0ms : start
+    11ms : step 2
+    11ms : step 3
+    11ms : step 4
+    11ms : step 5
+    11ms : end
+    15ms : step 1
     */
 })();
