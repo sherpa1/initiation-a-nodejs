@@ -12,7 +12,12 @@
 
 ### Objectifs
 
-A partir de l'exemple fourni et à l'aide des méthodes disponibles dans le fichier ./utils/asynchronous.js, coder la recette des "Spaghetti al pomodoro" ci-dessous.
+A partir de l'exemple fourni et à l'aide des méthodes disponibles dans le fichier `./utils/asynchronous.js`, coder la recette des "Spaghetti al pomodoro" ci-dessous.
+
+Pour gérer l'asynchronisme utiliser uniquement :
+
+- setTimeout (cf. méthode "do_after"),
+- les méthodes "callbacks",
 
 L'objectif est d'afficher dans le terminal chaque étape de la recette dans l'ordre logique et avec le délai correspondant.
 
