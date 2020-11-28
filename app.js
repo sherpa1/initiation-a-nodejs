@@ -1,3 +1,5 @@
+'use strict';
+
 const { hello, bonjour } = require("./utils/say");
 
 hello("world");
