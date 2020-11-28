@@ -1,3 +1,5 @@
+'use strict';
+
 const Robot = require("./classes/Robot");
 
 const hal9000 = new Robot("HAL9000");//Hi, my name is "HAL9000" !
