@@ -1,3 +1,5 @@
+'use strict';
+
 (async () => {
     const print = (something) => {
         const ms = what_time_is_it();
