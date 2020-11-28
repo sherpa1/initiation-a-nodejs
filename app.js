@@ -51,10 +51,11 @@ now(5);
 print("end");
 
 /*
-0ms: start
-5ms: step 2
-5ms: step 3
-5ms: step 4
-5ms: step 5
-15ms: step 1
+0ms : start
+5ms : step 3
+5ms : step 4
+5ms : step 5
+5ms : end
+10ms : step 2
+15ms : step 1
 */
