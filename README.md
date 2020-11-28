@@ -12,6 +12,14 @@
 - TP8 : Asynchronisme + Promise
 - TP9 : Asynchronisme + async / await
 
+Chaque tp dispose d'une branche git du même nom (ex : TP1 = branche git tp1).
+
+Pour changer de branche :
+
+```
+git checkout tp2
+```
+
 ---
 
 Alexandre Leroux
