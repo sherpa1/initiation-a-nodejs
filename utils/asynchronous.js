@@ -1,7 +1,7 @@
 const print = (something, start) => {
     let ms = time_spent(start);
     if (ms < 10) ms = `0${ms}`;
-    console.log(`${ms}ms : ${something}`);
+    console.log(`${ms}ms : ${something}\n`);
 }
 
 const time_spent = (start) => {
