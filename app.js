@@ -1,44 +1,46 @@
 'use strict';
 
-const print = (something) => {
-    const ms = what_time_is_it();
+const print = (something, start) => {
+    let ms = time_spent(start);
+    if (ms < 10) ms = `0${ms}`;
     console.log(`${ms}ms : ${something}`);
 }
 
-const what_time_is_it = () => {
-    const now_date = Date.now();
-    return now_date - start_date;//milliseconds after runtime start
+const time_spent = (start) => {
+    const do_now_date = Date.now();
+    return do_now_date - start;//milliseconds after runtime start
 }
 
-const now = (order) => {
-    print(`step ${order}`);
+const do_now = (step_number, start) => {
+    print(`step ${step_number}`, start);
 }
 
-const after = (order, ms) => {
+const do_after = (order, ms, start) => {
 
     setTimeout(() => {
-        print(`step ${order}`)
+        print(`step ${order}`, start)
 
     }, ms);
+
 }
 
 const start_date = Date.now();
 
 
-print("start");
-after(1, 10);
-after(2, 5);
-now(3);
-now(4);
-now(5);
-print("end");
+print("start", start_date);
+do_after(1, 10, start_date);
+do_after(2, 5, start_date);
+do_now(3, start_date);
+do_now(4, start_date);
+do_now(5, start_date);
+print("(theorical) end", start_date);
 
 /*
-0ms : start
-6ms : step 3
-6ms : step 4
-6ms : step 5
-6ms : end
-12ms : step 2
-18ms : step 1
+00ms : start
+05ms : step 3
+05ms : step 4
+05ms : step 5
+05ms : (theorical) end
+11ms : step 2
+16ms : step 1
 */
