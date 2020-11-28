@@ -2,21 +2,23 @@
 
 //await must be inside async
 (async () => {
+
     const print = (something) => {
-        const ms = what_time_is_it();
+        let ms = time_spent();
+        if (ms < 10) ms = `0${ms}`;
         console.log(`${ms}ms : ${something}`);
     }
 
-    const what_time_is_it = () => {
-        const now_date = Date.now();
-        return now_date - start_date;//milliseconds after runtime start
+    const time_spent = () => {
+        const do_now_date = Date.now();
+        return do_now_date - start_date;//milliseconds after runtime start
     }
 
-    const now = (order) => {
-        print(`step ${order}`);
+    const do_now = (step_number) => {
+        print(`step ${step_number}`);
     }
 
-    const after = (order, ms) => {
+    const do_after = (order, ms) => {
 
         return new Promise((resolve, reject) => {
             try {
@@ -32,24 +34,24 @@
 
     const start_date = Date.now();
 
-
     print("start");
 
-    after(1, 10).then(order => {
+    do_after(1, 10).then(order => {
         print(`step ${order}`)
     }).catch(error => {
         console.error(error);
     })
 
-    await after(2, 5).then(order => {
+    await do_after(2, 5).then(order => {
         print(`step ${order}`)
     }).catch(error => {
         console.error(error);
     })
 
-    now(3);
-    now(4);
-    now(5);
+    do_now(3);
+    do_now(4);
+    do_now(5);
+
     print("end");
 
     /*
