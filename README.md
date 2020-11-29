@@ -8,12 +8,16 @@
 - https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes
 - https://subscription.packtpub.com/book/web_development/9781783287314/1/ch01lvl1sec12/the-observer-pattern
 - https://dottedsquirrel.com/javascript/observer-pattern/
+- https://fr.wikipedia.org/wiki/SOLID_(informatique)
 
 ### Objectifs
 
 - Implémenter le Design Pattern **"Observer"** du _"Gang of Four"_ en prenant pour exemple l'observation d'un feu tricolore par un piéton, une voiture et une moto,
-- lorsque le feu tricolore change de couleur, les observateurs doivent réagir en fonction,
-- afficher des logs dans le terminal à chaque changement couleur du feu tricolore : couleur du feu et réaction des observateurs,
+- lorsque le feu tricolore change de couleur, les observateurs doivent réagir en cohérence (avancer ou s'arrêter),
+- afficher des logs dans le terminal à chaque changement de couleur du feu tricolore :
+  - couleur du feu,
+  - réaction des observateurs,
+- exploiter au mieux les bonnes pratiques de la POO pour disposer d'un code "S.O.L.I.D",
 
 ---
 

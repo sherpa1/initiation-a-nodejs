@@ -1,4 +1,4 @@
-const Observer = require("./Observer");
+const Observer = require("./gof-desing-patterns/observer/Observer");
 
 class Movable extends Observer {
     stop() {

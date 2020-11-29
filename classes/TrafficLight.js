@@ -59,19 +59,19 @@ class TrafficLight extends Subject {
     print_emoticon() {
         switch (this.color) {
             case TrafficLight.RED:
-                console.log(`Traffic Light color : ${this.color.color} 🟥`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟥\n`);
                 break;
 
             case TrafficLight.ORANGE:
-                console.log(`Traffic Light color : ${this.color.color} 🟧`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟧\n`);
                 break;
 
             case TrafficLight.GREEN:
-                console.log(`Traffic Light color : ${this.color.color} 🟩`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟩\n`);
                 break;
 
             default:
-                console.log(`Traffic Light color : ${this.color.color} 🟥`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟥\n`);
                 break;
         }
     }

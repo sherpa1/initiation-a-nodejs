@@ -18,11 +18,11 @@ class Pedestrian extends Observer {
     }
 
     walk() {
-        console.log("----------> Pedestrian walks\n");
+        console.log("----------> Pedestrian walks");
     }
 
     stop() {
-        console.log("----------> Pedestrian stops\n");
+        console.log("----------> Pedestrian stops");
     }
 }
 
