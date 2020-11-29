@@ -1,24 +1,38 @@
 'use strict';
 
-const { print, time_spent, do_now, do_after } = require("./utils/asynchronous");
+const TrafficLight = require("./classes/TrafficLight");
+const Pedestrian = require("./classes/Pedestrian");
 
-const start_date = Date.now();
+const a_traffic_light = new TrafficLight();
+const a_pedestrian = new Pedestrian();
 
 
-print("start", start_date);
-do_after(1, 10, start_date);
-do_after(2, 5, start_date);
-do_now(3, start_date);
-do_now(4, start_date);
-do_now(5, start_date);
-print("(theorical) end", start_date);
+const on_color_change = (event) => {
+    a_pedestrian.update(event);
+}
+
+a_traffic_light.addListener('color_changed', on_color_change);
+
 
 /*
-00ms : start
-05ms : step 3
-05ms : step 4
-05ms : step 5
-05ms : (theorical) end
-11ms : step 2
-16ms : step 1
+Traffic Light color : RED 🟥
+------------> Pedestrian stops
+
+Traffic Light color : GREEN 🟩
+------------> Pedestrian walks
+
+Traffic Light color : ORANGE 🟧
+------------> Pedestrian stops
+
+Traffic Light color : RED 🟥
+------------> Pedestrian stops
+
+Traffic Light color : GREEN 🟩
+------------> Pedestrian walks
+
+Traffic Light color : ORANGE 🟧
+------------> Pedestrian stops
+
+Traffic Light color : RED 🟥
+------------> Pedestrian stops
 */
