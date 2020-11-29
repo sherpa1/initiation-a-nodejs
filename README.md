@@ -11,7 +11,10 @@
 - TP07 : Asynchronisme + setTimeout + callbacks
 - TP08 : Asynchronisme + Promise
 - TP09 : Asynchronisme + async / await
-- TP10 : Consommation d'API
+- TP10 : Asynchronisme dans une boucle
+- TP11 : Interactions avec une API
+- TP12 : Gestion d'événements
+- TP13 : Implémentation du Design Pattern Observer
 
 Chaque tp dispose d'une branche git du même nom (ex : TP01 = branche git tp01).
 
