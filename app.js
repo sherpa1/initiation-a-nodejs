@@ -43,17 +43,13 @@ print("(theorical) end", start_date);
 
 /*
 00ms : start
-06ms : (theorical) end
-07ms : step 3
-07ms : step 4
-2008ms : step 8
-3008ms : step 0
-4009ms : step 2
-5008ms : step 1
-5009ms : step 9
-6009ms : step 7
-7008ms : step 6
-9007ms : step 5
-9008ms : All promises have been resolved
-9008ms : Pratical end
+08ms : (theorical) end
+09ms : step 1
+6015ms : step 0
+7009ms : step 3
+7010ms : step 4
+7010ms : step 5
+9009ms : step 2
+9011ms : All promises have been resolved
+9011ms : Pratical end
 */

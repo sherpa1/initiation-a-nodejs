@@ -12,8 +12,10 @@
 ### Objectifs
 
 - Dans une boucle de 6 itérations, exécuter à chaque itération une opération asynchrone (via l'instruction setTimeout) avec une durée aléatoire,
-- A la résolution de chaque opération asynchrone, indiquer le temps écoulé en ms,
-- Attendre que toutes les opérations asynchrones soient résolues pour afficher un message de log indiquant la fin du programme,
+- Attendre que toutes les opérations asynchrones soient résolues,
+- Trier les opérations par le temps de résolution utile à leur résolution (par ordre croissant),
+- Afficher un message de log pour chaque opération indiquant leur temps de résolution,
+- Afficher un message de log indiquant la fin du programme,
 - Gérer la résolution de plusieurs instructions asynchrones exécutées dans une boucle
 
 ---
