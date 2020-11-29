@@ -1,22 +1,23 @@
-const Observer = require('./gof-desing-patterns/observer/Observer');
+const Movable = require("./Movable");
 const TrafficLight = require("./TrafficLight");
 
-class Pedestrian extends Observer {
+class Pedestrian extends Movable {
     update(event) {
 
-        if (event == TrafficLight.RED || event == TrafficLight.ORANGE) {
+        if (event === TrafficLight.RED || event === TrafficLight.ORANGE) {
             this.stop();
         } else if (event === TrafficLight.GREEN) {
             this.walk();
         }
+
     }
 
     walk() {
-        console.log("----------> Pedestrian walks\n");
+        console.log("----------> Pedestrian walks");
     }
 
     stop() {
-        console.log("----------> Pedestrian stops\n");
+        console.log("----------> Pedestrian stops");
     }
 }
 

@@ -5,10 +5,16 @@
 ### Ressources
 
 - https://nodejs.org/api/events.html
+- https://fr.wikipedia.org/wiki/SOLID_(informatique)
 
 ### Objectifs
 
-- Utiliser le système de diffusion d'événements de Node.js pour mettre en place un système où une voiture, une moto et un piéton sont informés lorsque le feu tricolore change de couleur et agissent en cohérence (avance / stop)
+- Implémenter le Design Pattern **"Observer"** du _"Gang of Four"_ en prenant pour exemple l'observation d'un feu tricolore par un piéton, une voiture et une moto,
+- lorsque le feu tricolore change de couleur, les observateurs doivent réagir en cohérence (avancer ou s'arrêter),
+- afficher des logs dans le terminal à chaque changement de couleur du feu tricolore :
+  - couleur du feu,
+  - réaction des observateurs,
+- exploiter au mieux les bonnes pratiques de la POO pour disposer d'un code "S.O.L.I.D",
 
 ---
 

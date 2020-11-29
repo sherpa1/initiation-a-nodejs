@@ -1,6 +1,6 @@
-const Subject = require("./gof-desing-patterns/observer/Subject");
+const { EventEmitter } = require("events");
 
-class TrafficLight extends Subject {
+class TrafficLight extends EventEmitter {
     static GREEN = {
         color: "GREEN", duration: 100
     };
@@ -31,7 +31,7 @@ class TrafficLight extends Subject {
 
         this.print_emoticon();
 
-        this.notify("color_changed", this.color);
+        this.emit("color:changed", this.color);
 
         switch (this.color) {
             case TrafficLight.RED:
@@ -51,27 +51,25 @@ class TrafficLight extends Subject {
                 break;
         }
 
-
-
         this.start_light();
     }
 
     print_emoticon() {
         switch (this.color) {
             case TrafficLight.RED:
-                console.log(`Traffic Light color : ${this.color.color} 🟥`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟥\n`);
                 break;
 
             case TrafficLight.ORANGE:
-                console.log(`Traffic Light color : ${this.color.color} 🟧`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟧\n`);
                 break;
 
             case TrafficLight.GREEN:
-                console.log(`Traffic Light color : ${this.color.color} 🟩`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟩\n`);
                 break;
 
             default:
-                console.log(`Traffic Light color : ${this.color.color} 🟥`);
+                console.log(`\nTraffic Light color : ${this.color.color} 🟥\n`);
                 break;
         }
     }

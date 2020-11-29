@@ -1,6 +1,4 @@
-const Observer = require("./Observer");
-
-class Movable extends Observer {
+class Movable {
     stop() {
 
     }
