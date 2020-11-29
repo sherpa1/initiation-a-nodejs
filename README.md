@@ -13,11 +13,11 @@
 ### Objectifs
 
 - Implémenter le Design Pattern **"Observer"** du _"Gang of Four"_ en prenant pour exemple l'observation d'un feu tricolore par un piéton, une voiture et une moto,
-- lorsque le feu tricolore change de couleur, les observateurs doivent réagir en cohérence (avancer ou s'arrêter),
-- afficher des logs dans le terminal à chaque changement de couleur du feu tricolore :
+- Lorsque le feu tricolore change de couleur, les observateurs doivent réagir en cohérence (avancer ou s'arrêter),
+- Afficher des logs dans le terminal à chaque changement de couleur du feu tricolore :
   - couleur du feu,
   - réaction des observateurs,
-- exploiter au mieux les bonnes pratiques de la POO pour disposer d'un code "S.O.L.I.D",
+- Exploiter au mieux les bonnes pratiques de la POO pour disposer d'un code "S.O.L.I.D",
 
 ---
 
