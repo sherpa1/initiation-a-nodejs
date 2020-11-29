@@ -1,16 +1,14 @@
-const { EventEmitter } = require('events');
+const SubjectEvent = require("./SubjectEvent");
 
-class Subject extends EventEmitter {
+class Subject {
 
     constructor() {
-        super();
         this.listeners = [];
     }
 
     notify(event, data = {}) {
-        console.log(this.listeners);
-        this.emit(event, data);
         this.listeners.forEach(an_observer => {
+            an_observer.update(new SubjectEvent("color:changed", this.color.color));
         });
     }
 

@@ -1,10 +1,9 @@
 # Initiation à Node.js
 
-## TP 12 : Gestion d'événements
+## TP 13 : Design Pattern Observer
 
 ### Ressources
 
-- https://nodejs.org/api/events.html
 - https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Op%C3%A9rateurs/instanceof
 - https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes
 - https://subscription.packtpub.com/book/web_development/9781783287314/1/ch01lvl1sec12/the-observer-pattern
