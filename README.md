@@ -9,7 +9,7 @@
 
 ### Objectifs
 
-- Implémenter le Design Pattern **"Observer"** du _"Gang of Four"_ en prenant pour exemple l'observation d'un feu tricolore par un piéton, une voiture et une moto,
+- Implémenter un système de diffusion d'événements personnalisés en prenant pour exemple l'observation d'un feu tricolore par un piéton, une voiture et une moto,
 - lorsque le feu tricolore change de couleur, les observateurs doivent réagir en cohérence (avancer ou s'arrêter),
 - afficher des logs dans le terminal à chaque changement de couleur du feu tricolore :
   - couleur du feu,
