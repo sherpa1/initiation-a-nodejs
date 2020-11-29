@@ -11,12 +11,9 @@
 
 ### Objectifs
 
-- Dans le dossier ./classes
-  - créer une classe TrafficLight héritant de la classe EventEmitter (intégrée par défaut à Node.js)
-  - créer une classe Vehicle
-  - créer une classe Car
-  - créer une classe Motorbike
-  - créer une classe Walker
+- Implémenter le Design Pattern **"Observer"** du _"Gang of Four"_ en prenant pour exemple l'observation d'un feu tricolore par un piéton, une voiture et une moto,
+- lorsque le feu tricolore change de couleur, les observateurs doivent réagir en fonction,
+- afficher des logs dans le terminal à chaque changement couleur du feu tricolore : couleur du feu et réaction des observateurs,
 
 ---
 
