@@ -32,7 +32,7 @@ Pour l'exercice, 1mn correspondra à 10s (soit 10000ms), donc 9mn = 90000 ms.
 - lorsque l'eau est bouillante, mettre du gros sel dans l'eau,
 - mettre 500g de spaghetti à cuire pendant 9mn dans la casserole d'eau bouillante, remuer les spaghetti toutes les 2 mn,
 - essorer les spaghetti et les verser dans la poêle avec la sauce tomate,
-- laisser les spaghetti dans la poêle avec la sauce tomate pendant 1mn,
+- terminer la cuisson des spaghetti dans la poêle avec la sauce tomate pendant 1mn,
 - servir et déguster ;)
 
 ---
