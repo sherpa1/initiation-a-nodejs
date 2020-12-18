@@ -16,6 +16,8 @@
 - TP12 : Gestion d'événements
 - TP13 : Implémentation du Design Pattern Observer
 
+D'autres TP viendront progressivement compléter cette liste (ex : gestion de fichiers, serveur http...).
+
 Chaque tp dispose d'une branche git du même nom (ex : TP01 = branche git tp01).
 
 Pour changer de branche :
